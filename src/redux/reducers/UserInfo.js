@@ -1,3 +1,5 @@
+const SET_NAME = 'UserInfo/SET_NAME';
+
 function UserInfo(currState, action ){
     if(currState === undefined){
         return { 
@@ -12,7 +14,6 @@ function UserInfo(currState, action ){
 }
 export default UserInfo;
 
-const SET_NAME = 'UserInfo/SET_NAME';
 export const UserInfoDispatch = {
     setName : function(name){
         return {type : SET_NAME, value : name};
