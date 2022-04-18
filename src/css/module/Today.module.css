@@ -1,19 +1,24 @@
 .today {
     width:100%;
     height:100%;
+    /* background-color: white; */
 }
 .header {
     width:100%;
-    height:10%;
-    border-bottom:1px solid black;
+    height:20%;
+    background-color:  var(--ih-blue);
+    /* border-bottom:1px solid rgb(24, 95, 250); */
     display:flex;
-    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.header .left{
-    width:80%;
+.header .date{
+    width:100%;
+    height: 20%;
     display:flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .header .left span {
@@ -25,8 +30,35 @@
     align-items: center;
 }
 .header .right h1{
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     margin: 0px;
     font-size: 2.5rem;
     padding-left : 10px
+}
+
+.total{
+    box-sizing: border-box;
+    border: 1px solid  var(--ih-blue);
+    width: 95%;
+    height: 40%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total div {
+    text-align: center;
+    width: 50%;
+}
+.total div span{
+    font-size: 1.5rem;
+}
+
+
+.body{
+    height: 80%;
+    overflow-y: scroll;
 }

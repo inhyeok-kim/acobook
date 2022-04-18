@@ -19,12 +19,16 @@ function App() {
               <Route path="/today" element={<Today/>} />
               <Route path="/" element={<Home/>} />
             </Routes>
+            <div className={style.writeBtn}>
+              <button>+</button>
+            </div>
         </section>
 
         <footer>
           <MenuBar />
         </footer>
 
+        
 
       </BrowserRouter>
     </div>
