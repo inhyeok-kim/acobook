@@ -1,7 +1,9 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { useState } from 'react';
+
 import Home from 'views/Home.js';
 import Today from 'views/Today';
 import MenuBar from 'components/MenuBar';
+import Balance from 'views/Balance';
 
 //style
 import style from 'css/module/App.module.css';
@@ -9,28 +11,35 @@ import style from 'css/module/App.module.css';
 
 
 function App() {
+  const [menu, setMenu] = useState("today");
+  function renderMenu(){
+    switch (menu) {
+      case "home":
+        return (<Home />)
+      case "today":
+        return (<Today />)
+      case "balance":
+        return (<Balance />)
+      default:
+        return (<Home />)
+    }
+    
+  }
 
   return (
     <div id="app" className={style.app}>
-      <BrowserRouter>
       
         <section className={style.main}>
-            <Routes>
-              <Route path="/today" element={<Today/>} />
-              <Route path="/" element={<Home/>} />
-            </Routes>
+            {renderMenu()}
             <div className={style.writeBtn}>
               <button>+</button>
             </div>
         </section>
 
         <footer>
-          <MenuBar />
+          <MenuBar menu={menu} setMenu={ (m)=>{setMenu(m)} } />
         </footer>
 
-        
-
-      </BrowserRouter>
     </div>
   );
 }

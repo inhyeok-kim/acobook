@@ -20,11 +20,14 @@ li{
     color :rgb(163, 163, 163);
     font-weight: bold;
 }
-li a{
+li button{
     color :rgb(163, 163, 163);
     font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1rem;
 }
-a.active{
+button.active{
     color :  var(--ih-blue);
     font-weight: bold;
 }

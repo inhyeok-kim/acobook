@@ -1,26 +1,16 @@
-import style from 'css/module/Today.module.css';
+import style from 'css/module/Balance.module.css';
 
 import List from 'components/List';
 
-function Today(){
+function Balance(){
+
     return (
-        <div className={style.today} >
+        <div className={style.balance} >
             <header className={style.header} >
-                <div className={style.date} >
-                    <span>2022년 4월 15일 (금)</span>
+                <div className={style.total}>
+                    <span>총자산</span>
+                    <span><span>&#8361; </span>3,253,070</span>
                 </div>
-                <article className={style.total}>
-                    <div>
-                        지출
-                        <br/>
-                        <span>20,000</span>
-                    </div>
-                    <div>
-                        수익
-                        <br/>
-                        <span>20,000</span>
-                    </div>
-                </article>
             </header>
             <section className={style.body}>
                 <div>
@@ -39,4 +29,4 @@ function Today(){
     )
 }
 
-export default Today;
+export default Balance;

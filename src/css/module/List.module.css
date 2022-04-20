@@ -32,4 +32,20 @@
     font-size: 0.8rem;
 }
 
+.expense{
+    background-color: var(--ih-red);
+    padding : 7px 10px;
+    text-align: right;
+    color: white;
+    border-radius: 5px;
+}
+
+.income{
+    background-color: var(--ih-green);
+    padding : 7px 10px;
+    text-align: right;
+    color: white;
+    border-radius: 5px;
+}
+
 

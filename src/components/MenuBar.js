@@ -1,18 +1,29 @@
-import { NavLink } from 'react-router-dom';
 // style
 import style from 'css/module/MenuBar.module.css';
 // style
 
-function MenuBar(){
+function MenuBar({
+    setMenu,
+    menu
+}){
+    function menuActive(m){
+        if(menu === m){
+            return style.active;
+        }
+        return "";
+    }
+    function goMenu(m){
+        setMenu(m);
+    }
 
     return (
         <div className={ style.menu_bar}>
             <ul>
                 <li>
-                    <NavLink className={({ isActive })=> isActive ? style.active : '' } to="/today">오늘</NavLink>
+                    <button className={menuActive("today")} onClick={()=>{goMenu("today")}} >오늘</button>
                 </li>
                 <li>
-                    <NavLink to="/balance">잔액</NavLink>
+                    <button className={menuActive("balance")} onClick={()=>{goMenu("balance")}}>잔액</button>
                 </li>
             </ul>
         </div>
