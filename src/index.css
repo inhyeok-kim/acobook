@@ -36,5 +36,8 @@ a:visited {
 :root{
     --ih-blue : #1c97fd;
     --ih-red : #ff351b;
-    --ih-green : #34e411;
+    --ih-deepred : #ff1100;
+    --ih-green : #02d874;
+    --ih-lightgreen : #0eff72;
+    --ih-background : #ececec;
 }

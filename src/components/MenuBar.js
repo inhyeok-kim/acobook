@@ -25,6 +25,15 @@ function MenuBar({
                 <li>
                     <button className={menuActive("balance")} onClick={()=>{goMenu("balance")}}>잔액</button>
                 </li>
+                <li className={style.registLi}>
+                    <button className={style.registBtn}>+</button>
+                </li>
+                <li>
+                    <button className={menuActive("budget")} onClick={()=>{goMenu("budget")}}>예산</button>
+                </li>
+                <li>
+                    <button className={menuActive("detail")} onClick={()=>{goMenu("detail")}}>자세히</button>
+                </li>
             </ul>
         </div>
     )

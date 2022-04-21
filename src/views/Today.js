@@ -1,6 +1,6 @@
 import style from 'css/module/Today.module.css';
 
-import List from 'components/List';
+import HistoryList from 'components/HistoryList';
 
 function Today(){
     return (
@@ -24,14 +24,14 @@ function Today(){
             </header>
             <section className={style.body}>
                 <div>
-                    <h4 style={{marginBottom:"5px", paddingLeft:"25px",color:"grey", width:"50%",display:"inline-block"}}>예정</h4>
-                    <h4 style={{marginBottom:"5px", paddingRight:"25px",color:"grey", width:"50%",textAlign:"right", display:"inline-block"}}>- &#8361;60,000</h4>
-                    <List></List>
+                    <h5 style={{marginTop : "10px", marginBottom:"5px", paddingLeft:"25px",color:"grey", width:"50%",display:"inline-block"}}>예정</h5>
+                    <h5 style={{marginTop : "10px", marginBottom:"5px", paddingRight:"25px",color:"grey", width:"50%",textAlign:"right", display:"inline-block"}}>- &#8361; 60,000</h5>
+                    <HistoryList></HistoryList>
                 </div>
                 <div>
-                    <h4 style={{marginBottom:"5px", paddingLeft:"25px",color:"grey", width:"50%",display:"inline-block"}}>오늘</h4>
-                    <h4 style={{marginBottom:"5px", paddingRight:"25px",color:"grey", width:"50%",textAlign:"right", display:"inline-block"}}>- &#8361;60,000</h4>
-                    <List></List>
+                    <h5 style={{marginTop : "10px", marginBottom:"5px", paddingLeft:"25px",color:"grey", width:"50%",display:"inline-block"}}>오늘</h5>
+                    <h5 style={{marginTop : "10px", marginBottom:"5px", paddingRight:"25px",color:"grey", width:"50%",textAlign:"right", display:"inline-block"}}>- &#8361; 60,000</h5>
+                    <HistoryList></HistoryList>
                 </div>
                 
             </section>

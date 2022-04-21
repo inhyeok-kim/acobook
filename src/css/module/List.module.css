@@ -28,24 +28,47 @@
     color : black;
 }
 
+.li > div:first-of-type span:first-of-type{
+    font-size: 0.9rem;
+}
+
 .li > div:first-of-type span:last-of-type{
     font-size: 0.8rem;
 }
 
 .expense{
     background-color: var(--ih-red);
-    padding : 7px 10px;
+    padding : 5px 10px;
     text-align: right;
     color: white;
     border-radius: 5px;
+    font-size: 0.9rem;
+    padding-top: 7px;
+    font-weight: normal;
 }
 
 .income{
     background-color: var(--ih-green);
-    padding : 7px 10px;
+    font-size: 0.9rem;
+    padding : 5px 10px;
+    padding-top: 7px;
+    font-weight: normal;
     text-align: right;
     color: white;
     border-radius: 5px;
 }
 
+.debt{
+    color: var(--ih-red);
+    font-weight: lighter;
+    font-size: 0.9rem !important;
+    margin-top: 1px;
+}
+
+.asset{
+    color: var(--ih-green);
+    font-weight: lighter;
+    font-size: 0.9rem !important;
+    margin-top: 1px;
+}
 

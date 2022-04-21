@@ -2,9 +2,10 @@ import { useState } from 'react';
 
 import Home from 'views/Home.js';
 import Today from 'views/Today';
-import MenuBar from 'components/MenuBar';
 import Balance from 'views/Balance';
+import Budget from 'views/Budget';
 
+import MenuBar from 'components/MenuBar';
 //style
 import style from 'css/module/App.module.css';
 //style
@@ -20,6 +21,8 @@ function App() {
         return (<Today />)
       case "balance":
         return (<Balance />)
+      case "budget":
+        return (<Budget />)
       default:
         return (<Home />)
     }
@@ -31,9 +34,6 @@ function App() {
       
         <section className={style.main}>
             {renderMenu()}
-            <div className={style.writeBtn}>
-              <button>+</button>
-            </div>
         </section>
 
         <footer>

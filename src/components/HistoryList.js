@@ -1,6 +1,6 @@
 import style from 'css/module/List.module.css';
 
-function List({}){
+function HistoryList(){
 
     return (
         <ul className={style.ul}>
@@ -55,4 +55,4 @@ function List({}){
     )
 }
 
-export default List;
+export default HistoryList;
