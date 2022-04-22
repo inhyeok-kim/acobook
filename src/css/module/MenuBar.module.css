@@ -32,14 +32,11 @@ button.active{
     font-weight: bold;
 }
 
-.registLi{
-    
-}
 .registBtn{
     background-color: var(--ih-blue);
     width: 13vw;
     height: 13vw;
-    border-radius: 50px;
+    border-radius: 100px;
     color: white;
     font-size: 3rem;
     display: flex;

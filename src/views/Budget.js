@@ -24,6 +24,39 @@ function Budget(){
                         &#8361; 230,000
                     </div>
                 </article>
+                <article className={style.budgetList}>
+                    <div className={style.budgetItem}>
+                        <div className={style.budgetIcon}>
+                        </div>
+                        <span className={style.budgetName}>예산명</span>
+                        <span className={style.budgetExpense}>250,000</span>
+                        <span className={style.budgetPrice}>300,300</span>
+                    </div>
+                    <div className={style.budgetItem}>
+                        <div className={style.budgetIcon}></div>
+                        <span className={style.budgetName}>예산명</span>
+                        <span className={style.budgetExpense}>250,000</span>
+                        <span className={style.budgetPrice}>1,300,300</span>
+                    </div>
+                    <div className={style.budgetItem}>
+                        <div className={style.budgetIcon}></div>
+                        <span className={style.budgetName}>예산명</span>
+                        <span className={style.budgetExpense}>250,000</span>
+                        <span className={style.budgetPrice}>300,300</span>
+                    </div>
+                    <div className={style.budgetItem}>
+                        <div className={style.budgetIcon}></div>
+                        <span className={style.budgetName}>예산명</span>
+                        <span className={style.budgetExpense}>250,000</span>
+                        <span className={style.budgetPrice}>300,300</span>
+                    </div>
+                    <div className={style.budgetItem}>
+                        <div className={style.budgetIcon}></div>
+                        <span className={style.budgetName}>예산명</span>
+                        <span className={style.budgetExpense}>250,000</span>
+                        <span className={style.budgetPrice}>300,300</span>
+                    </div>
+                </article>
             </section>
         </div>
     )
