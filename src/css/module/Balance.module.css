@@ -79,3 +79,9 @@
     height: 82%;
     overflow-y: scroll;
 }
+
+.sticky{
+    position: sticky;
+    top:0px;
+    background: var(--ih-background);
+}

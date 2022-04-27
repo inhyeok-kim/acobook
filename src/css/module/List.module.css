@@ -5,6 +5,7 @@
     display: flex;
     background-color: white;
     padding: 5px 10px;
+    align-items: center;
 }
 .li:first-of-type{
     border-bottom : 1px solid lightgray;
@@ -34,6 +35,24 @@
 
 .li > div:first-of-type span:last-of-type{
     font-size: 0.8rem;
+}
+
+.li button{
+    border: 0px;
+    color: white;
+    background-color: var(--ih-red);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    font-size: 2rem;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.li button span{
+    width: 50%;
+    height: calc(50% + 1px);
+    border-bottom: 1px solid white;
 }
 
 .expense{

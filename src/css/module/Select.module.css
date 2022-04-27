@@ -1,0 +1,52 @@
+.wrapper {
+    width : 100vw;
+    bottom : 5%;
+    position : absolute;
+    z-index: 99;
+}
+
+.selectBox{
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(248, 248, 248);
+}
+.selectBox ul{
+    margin: 0;
+}
+.selectBox li:active{
+    background-color: black;
+}
+
+.selectBox li{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color : var(--ih-blue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectBox li:last-of-type{
+    border-bottom: 0;
+}
+
+.cancel{
+    width: 100%;
+    width: 95%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: white;
+    display: flex;
+    color : rgb(53, 106, 252);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

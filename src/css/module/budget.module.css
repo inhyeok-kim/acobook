@@ -88,7 +88,7 @@
 }
 .budgetItem{
     margin: 10px 10px;
-    width : calc(25% - 20px);
+    width: 64px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -100,10 +100,10 @@
 }
 
 .budgetIcon{
-    width: 100%;
-    height : calc(23vw - 20px);
+    width: 64px;
+    height : 64px;
     border : 1px solid black;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
 .budgetName{
