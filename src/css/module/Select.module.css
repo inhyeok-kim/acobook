@@ -1,8 +1,8 @@
 .wrapper {
     width : 100vw;
-    bottom : 5%;
     position : absolute;
     z-index: 99;
+    transition: bottom 1s, top 1s;
 }
 
 .selectBox{
@@ -35,7 +35,6 @@
 }
 
 .cancel{
-    width: 100%;
     width: 95%;
     height: 50px;
     margin: auto;

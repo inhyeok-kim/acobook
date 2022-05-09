@@ -1,22 +1,21 @@
 import style from 'css/module/Select.module.css';
 
 function Select({
-    select
+    select, open, openTrigger
 }){
-    
-    function touched(e){
-        console.log(e.nativeEvent);
-    }
     return (
-        <div className={style.wrapper}>
+        <div className={style.wrapper} style={open ? {bottom:'5%'}:{top:'100%'}}>
             <div className={style.selectBox}>
                 <ul>
-                    <li onTouchStart={touched}>삭제</li>
-                    <li onTouchStart={touched}>추가</li>
-                    <li onTouchStart={touched}>수정</li>
+                    <li >삭제</li>
+                    <li >추가</li>
+                    <li >수정</li>
                 </ul>
             </div>
-            <div className={style.cancel}>취소</div>
+            <div 
+                className={style.cancel}
+                onClick={()=>{openTrigger(false)}}
+            >취소</div>
         </div>
     )
 }

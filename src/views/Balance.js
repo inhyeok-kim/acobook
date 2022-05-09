@@ -7,20 +7,24 @@ import Select from 'components/Select.js';
 
 function Balance(){
     const [modify, setModify] = useState(false);
+    const [add, setAdd] = useState(false);
+
     function goModify(){
         setModify(true);
     }
     function closeModify(){
         setModify(false);
     }
-    
+    function doAddBtn(){
+        setAdd(true);
+    }
 
     return (
         <div className={style.balance} >
             <header className={style.header} >
                 <div className={style.head}>
                     {modify ? 
-                        <button style={{textAlign : 'left'}}>
+                        <button onClick={doAddBtn} style={{textAlign : 'left'}}>
                             추가
                         </button>
                      : 
@@ -80,7 +84,7 @@ function Balance(){
                 </div>
                 
             </section>
-            <Select></Select>
+                <Select open={add} openTrigger={setAdd}></Select>
         </div>
     )
 }
